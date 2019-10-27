@@ -28,9 +28,4 @@ public class UserProfileTest {
 
             Assert.assertEquals(expected,actual);
         }
-
-        @Test
-        public void bogustest(){
-
-        }
 }
