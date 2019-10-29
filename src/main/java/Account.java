@@ -3,13 +3,15 @@ public class Account {
 
     private String type;
     private String number;
-    private Integer Balance;
 
 
-    public Account(String type, String number, Integer balance) {
+    public Account() {
+
+    }
+
+    public Account(String type, String number, Double balance) {
         this.type = type;
         this.number = number;
-        Balance = balance;
     }
 
     public String getType() {
@@ -27,12 +29,7 @@ public class Account {
     public void setNumber(String number) {
         this.number = number;
     }
-
-    public Integer getBalance() {
-        return Balance;
-    }
-
-    public void setBalance(Integer balance) {
-        Balance = balance;
-    }
 }
+
+
+
