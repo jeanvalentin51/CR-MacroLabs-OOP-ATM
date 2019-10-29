@@ -15,11 +15,8 @@ public class LogDataTest {
     public void testWriteToFile() throws IOException {
         String lineToWrite = "";
         LogData test1 = new LogData("account_log.txt",true);
-        String formatedDate = String.valueOf(new Date());
 
-        formatedDate = formatedDate.substring(0,19);
-
-        lineToWrite = "344AB" + "\t" + "34567" + "\t" + "Checking" + "\t" + "5.00" + "\t" + "12.00" + "\t" + formatedDate;
+        lineToWrite = "344AB" + "\t" + "67589" + "\t" + "Checking" + "\t" + "5.00" + "\t" + "12.00" + "\t";
 
         test1.writeToFile(lineToWrite);
     }
