@@ -10,8 +10,13 @@ import java.util.Scanner;
 
 /**
  * @author valentin
- *
- * This class will read and writ to a file; location will be /user/home directory
+ * Expected format for the line to write:
+ *   id \t account # \t tran amt \t balance \ date
+ *   id - 4 numeric digits; acct # - id + 1 digit for acct type
+ *   accoutn types:
+ *      1 - checking
+ *      2 - savings
+ *      3 - investment
  */
 
 public class LogData {
