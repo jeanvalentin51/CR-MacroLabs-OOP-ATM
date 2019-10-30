@@ -2,33 +2,14 @@ public class Account {
 
 
     private String type;
-    private String number;
+    private Integer number;
     private Double balance;
 
 
 
 
     public Account() {
-
-    }
-
-    public Account(String number, String type) {
-        this.number = number;
-        this.type = type;
-        this.balance = 0.00;
-        switch (type)   {
-            case "checking" :
-                this.number = number + "c";
-        }
-
-
-
-
-
-
-        if(type.equals("Checking")) {
-            this.number = number + "c";
-        }
+        this.number = generateAccountNumer();
     }
 
     public String getType() {
@@ -39,11 +20,11 @@ public class Account {
         this.type = type;
     }
 
-    public String getNumber() {
+    public Integer getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(Integer number) {
         this.number = number;
     }
 
@@ -53,6 +34,14 @@ public class Account {
 
     public void setBalance(Double balance) {
         this.balance = balance;
+    }
+
+    public Integer generateAccountNumer() {
+        Integer max = 99999;
+        Integer min = 10000;
+        Integer range = max - min + 1;
+
+        return (int)(Math.random() * range) + min;
     }
 }
 
