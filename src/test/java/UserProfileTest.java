@@ -4,13 +4,13 @@ import org.junit.Test;
 
 public class UserProfileTest {
 
-        private UserProfile testUser;
-
+      //  private UserProfile testUser;
+/*
         @Test
         public void testGetUserPassword(){
             String expected = "Madskilz";
             String actual = "";
-            this.testUser = new UserProfile("Madskilz");
+           // this.testUser = new UserProfile("Madskilz");
 
             actual = this.testUser.getUserPassword();
 
@@ -27,5 +27,5 @@ public class UserProfileTest {
             actual = this.testUser.getUserPassword();
 
             Assert.assertEquals(expected,actual);
-        }
+        }*/
 }
