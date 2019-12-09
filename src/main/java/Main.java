@@ -4,6 +4,12 @@
 public class Main {
 
     public static void main(String[] args){
-        
+        UserRepository userProfilesWarehouse = new UserRepository();
+        AccountRepository accountWarehouse = new AccountRepository();
+
+
+        ConsoleMock newATM = new ConsoleMock(userProfilesWarehouse);
+        newATM.mainMenu();
     }
+
 }

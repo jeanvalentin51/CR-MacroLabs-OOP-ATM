@@ -2,7 +2,7 @@
 
 
 public class AccountActions {
-Account account = new Account();
+Account account;
 
 
     public Double getBalance() {
